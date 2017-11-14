@@ -43,9 +43,7 @@ KAFKA_BROKERS="localhost:9092" \
 KAFKA_TOPIC="cpulogs" \
 spark-2.2.0-bin-hadoop2.7/bin/spark-submit --master local[*] --jars spark-sql-kafka-0-10_2.11-2.1.0.jar OutlierDetector-assembly-1.0.jar
 ```
- 
-## Version
-This repository is a private version due to the mentioned requirements such as compiled jar files and reports. 
+
 
 ## Built With
 
