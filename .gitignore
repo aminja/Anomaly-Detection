@@ -1,0 +1,4 @@
+build/*
+!build/setupPipe.sh
+!build/startSpark.sh
+!build/spark-sql-kafka-0-10_2.11-2.1.0.jar
