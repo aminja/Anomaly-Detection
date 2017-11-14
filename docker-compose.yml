@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: antlypls/zookeeper
+    ports:
+      - "2181:2181"
+     
+
+  kafka:
+    image: antlypls/kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_CREATE_TOPICS: "cpulogs:1:1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+
+  java:
+    image: openjdk:jre
+    command: bash -c "/build/startSpark.sh"
+    ports:
+      - "4040:4040"
+    volumes:
+      - ./build:/build
+    working_dir: /build
+    depends_on:
+      - zookeeper
+      - kafka
+    stdin_open: true
+    tty: true
