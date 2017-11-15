@@ -1,7 +1,7 @@
 # Anomaly Detection using Spark + Kafka
 This project is provided to illustrate the concepts of stream processing using big data tools. We use Apache Kafka to stream the input file and Apache Spark to process the produced stream.
 
-## Run in docker mode (task 1)
+## Run in docker mode
 - clone repository
 
 ```
@@ -25,7 +25,7 @@ If there were no `spark-2.2.0-bin-hadoop2.7/` directory in `build/` path (workin
 ```
 ./build/setupPipe.sh
 ```
-## Manuall Installation (task 0)
+## Manuall Installation
 - create jar file:
 
 ```
