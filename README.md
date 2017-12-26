@@ -5,8 +5,8 @@ This project is provided to illustrate the concepts of stream processing using b
 - clone repository
 
 ```
-git clone https://gitlab.com/aminja/DigiKala_Task.git
-cd DigiKala_Task/
+git clone https://gitlab.com/aminja/Anomaly-Detection.git
+cd Anomaly-Detection/
 ```
 
 - run Docker containers
